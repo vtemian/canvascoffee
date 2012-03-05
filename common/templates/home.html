@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block extrahead %}
+    <script type="text/javascript" src="{{ STATIC_URL }}js/map.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/battle.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/frontend.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/plane.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/collissions.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/coffee_draw.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/style.css">
+{% endblock %}
+
+{% block header %}
+{% endblock %}
+
+{% block content %}
+    <div id="gameTools">
+        <button id="ready">I'm Ready!</button>
+    </div>
+    <div id="gameHolder" style="position: relative;">
+
+    </div>
+
+{% endblock %}
